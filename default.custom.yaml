@@ -12,6 +12,12 @@ patch:
 		when: has_menu # ] -> 下一页
 			accept: bracketright
 			send: Page_Down
+    when: has_menu # 按;选择第二个候选词
+      accept: semicolon
+      send: 2
+    when: has_menu # 按'选择第三个候选词
+      accept: apostrophe
+      send: 3
 
 	ascii_composer/switch_key:
 		Caps_Lock: noop
