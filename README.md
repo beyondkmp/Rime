@@ -44,9 +44,11 @@ sudo make install
 ## 配置
 
 1. 打开用户设定, 找到用户配置文件夹。
+
     ![config](https://beyondkmp.com/imgs/rime/config.png)
 2. 将之前的用户配置删除，然后将此git的内容下载到用户配置目录下。
 3. 重新加载就大功告成了。
+
     ![reset](https://beyondkmp.com/imgs/rime/reset.png)
 
 
