@@ -1,29 +1,29 @@
 patch:
-	menu:
-	page_size: 6  # 候选词的长度
-	schema_list:
-		schema: luna_pinyin_simp      # 朙月拼音 简化字
-		schema: wubi_pinyin           # 五笔拼音混合輸入
+  menu:
+    page_size: 6 # 候选词的个数
+  schema_list:
+    - schema: wubi_pinyin           # 五笔拼音混合輸入
+    - schema: luna_pinyin_simp      # 朙月拼音 简化字
 
-	key_binder/bindings:  # 以方括号换页
-		when: paging # [ -> 上一页
-			accept: bracketleft
-			send: Page_Up
-		when: has_menu # ] -> 下一页
-			accept: bracketright
-			send: Page_Down
-    when: has_menu # 按;选择第二个候选词
+  key_binder/bindings:
+    - when: paging # [ -> 上一页
+      accept: bracketleft
+      send: Page_Up
+    - when: has_menu # ] -> 下一页
+      accept: bracketright
+      send: Page_Down
+    - when: has_menu # 按;选择第二个候选词
       accept: semicolon
       send: 2
-    when: has_menu # 按'选择第三个候选词
+    - when: has_menu # 按'选择第三个候选词
       accept: apostrophe
       send: 3
 
-	ascii_composer/switch_key:
-		Caps_Lock: noop
-		Control_L: noop
-		Control_R: noop
-		Eisu_toggle: clear
-		# 按下左 shift 英文字符直接上屏，不需要再次回车，输入法保持英文状态
-		Shift_L: commit_code
-		Shift_R: noop
+  ascii_composer/switch_key:
+    Caps_Lock: noop
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    # 按下左 shift 英文字符直接上屏，不需要再次回车，输入法保持英文状态
+    Shift_L: commit_code
+    shift_R: noop

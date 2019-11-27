@@ -31,8 +31,8 @@ patch:
 
   speller:
     max_code_length: 4 #最长4码
-    auto_select: true #顶字上屏
-    auto_select_unique_candidate: true #无重码自动上屏
+    auto_select: false #顶字上屏
+    auto_select_unique_candidate: false #无重码自动上屏
   translator:
     # 开启自动造词相关设置
     enable_sentence: ture                # 是否开启自动造词
