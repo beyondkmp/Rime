@@ -34,7 +34,7 @@ Rime	rime	3
 ⇧	shift
 GBK	gbk
 UTF-8	utfba
-scomper@gmail.com	smail
+beyondkmp@gmail.com	bmail
 scomper	scomper
 macOS High Sierra	macoshs
 
