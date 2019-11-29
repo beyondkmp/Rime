@@ -29,8 +29,8 @@ patch:
     tags: abc
 
   "speller/max_code_length": 4 #最长4码
-  "speller/auto_select": true #顶字上屏
-  "speller/auto_select_unique_candidate": true #无重码自动上屏
+  "speller/auto_select": false #顶字上屏
+  "speller/auto_select_unique_candidate": false #无重码自动上屏
   
   "translator/dictionary": wubi86 #加载五笔词库
   "reverse_lookup/comment_format/@1": xform/^(\w+).*/$1/
